@@ -14,6 +14,8 @@ dependencies:
   get: ^4.6.5
   get_storage: ^2.0.3
   ticket_widget: ^0.0.1
+  firebase_auth: ^4.11.1
+  firebase_core: ^2.19.0
 
 dev_dependencies:
   flutter_test:

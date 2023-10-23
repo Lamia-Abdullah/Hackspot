@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
-import 'package:tickets_app/home/widgets/ticket.dart';
+import 'package:tickets_app/features/home/widgets/ticket.dart';
 
 class HomeCard extends StatelessWidget {
   const HomeCard({Key? key}) : super(key: key);
@@ -23,7 +23,7 @@ class HomeCard extends StatelessWidget {
               );
             },
             child: SizedBox(
-              width: 335,
+              width: 325,
               child: Card(
                 clipBehavior: Clip.antiAliasWithSaveLayer,
                 shape: RoundedRectangleBorder(

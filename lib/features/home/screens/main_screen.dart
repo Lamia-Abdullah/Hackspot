@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/controller/navigation_bar.dart';
-import 'package:tickets_app/home/screens/home_view.dart';
+import 'package:tickets_app/features/home/screens/home_view.dart';
 import '../../profile/screens/profile_view.dart';
 
 class MainScreen extends StatelessWidget {

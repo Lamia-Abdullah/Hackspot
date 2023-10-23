@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:tickets_app/home/widgets/home_card.dart';
-import 'package:tickets_app/profile/widgets/profile_hero.dart';
+import 'package:tickets_app/features/home/widgets/home_card.dart';
+import 'package:tickets_app/features/home/widgets/tabs.dart';
 
 import '../model/home_model.dart';
 
@@ -25,14 +25,26 @@ class _HomeState extends State<Home> {
         decoration:
             const BoxDecoration(color: Color.fromARGB(255, 232, 231, 231)),
         child: const Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisSize: MainAxisSize.min,
             children: [
-              ProfileHero(),
+              TabChips(),
               SizedBox(
                 height: 20,
               ),
               HomeCard(),
-              
+              // ElevatedButton(
+              //   child: const Text("Logout"),
+              //   onPressed: () {
+              //     FirebaseAuth.instance.signOut().then((value) {
+              //       print("Signed Out");
+              //       Navigator.push(
+              //           context,
+              //           MaterialPageRoute(
+              //               builder: (context) => const SignInScreen()));
+              //     });
+              //   },
+              // ),
             ]),
       ),
     );
