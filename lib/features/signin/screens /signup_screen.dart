@@ -1,7 +1,7 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tickets_app/features/home/screens/main_screen.dart';
+import 'package:tickets_app/features/event/screens/main_screen.dart';
 import 'package:tickets_app/shared/widget/button_widget.dart';
 import 'package:tickets_app/shared/widget/logo_widget.dart';
 import 'package:tickets_app/shared/widget/text_field_widget.dart';

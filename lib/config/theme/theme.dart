@@ -16,7 +16,7 @@ class ThemeController extends GetxController {
           ).copyWith(
             secondary: LightThemeColors.primaryColor,
           ),
-        )
+cardColor: LightThemeColors.cardColor,        )
       : ThemeData(
           primaryColor: DarkThemeColors.primaryColor,
           colorScheme: ColorScheme.fromSwatch(
@@ -26,6 +26,8 @@ class ThemeController extends GetxController {
           ).copyWith(
             secondary: DarkThemeColors.secondaryColor,
           ),
+           cardColor: DarkThemeColors.cardColor, // Set the cardColor based on the dark theme
+
         );
 
   void toggleTheme() {

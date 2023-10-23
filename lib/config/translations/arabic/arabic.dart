@@ -6,6 +6,10 @@ const Map<String, String> ar = {
   Strings.plaes: "المكان",
   Strings.city: " الرياض",
   Strings.date: " التاريخ",
-  Strings.cardTitle: " مؤتمر بلاك هات ",
-
+  Strings.eventTitle: " مؤتمر بلاك هات ",
+  Strings.hackathonTitle: "هاكاثون امازون",
+  Strings.join: "انضم",
+  Strings.profile:"الملف الشخصي",
+  Strings.events:"الفعاليات",
+  Strings.hackathon:"هاكاثون"
 };

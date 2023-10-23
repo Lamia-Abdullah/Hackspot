@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
-import 'package:tickets_app/features/home/widgets/ticket.dart';
 
-class HomeCard extends StatelessWidget {
-  const HomeCard({Key? key}) : super(key: key);
+class EventCard extends StatelessWidget {
+  const EventCard({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -18,9 +17,7 @@ class HomeCard extends StatelessWidget {
         itemBuilder: (context, index) {
           return GestureDetector(
             onTap: () {
-              Get.dialog(
-                const Tickets(),
-              );
+              Get.toNamed("/EventDetails");
             },
             child: SizedBox(
               width: 325,
@@ -47,7 +44,7 @@ class HomeCard extends StatelessWidget {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(Strings.cardTitle.tr),
+                            Text(Strings.eventTitle.tr),
                             const Text('Subtitle')
                           ],
                         ),

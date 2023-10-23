@@ -7,4 +7,6 @@ class DarkThemeColors {
   static const Color secondaryColor = Color(0xFF424242);
   //Icons
   static const Color iconColor = Colors.white;
+
+  static const Color cardColor = Colors.grey;
 }

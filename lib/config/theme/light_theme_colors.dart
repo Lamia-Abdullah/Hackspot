@@ -7,4 +7,6 @@ class LightThemeColors {
   static const Color secondaryColor = Color.fromARGB(255, 140, 140, 140);
   //Icons
   static const Color iconColor = Colors.white;
+
+  static const Color cardColor = Colors.blue;
 }

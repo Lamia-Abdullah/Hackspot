@@ -1,15 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:tickets_app/config/translations/enum.dart';
 import 'package:tickets_app/controller/navigation_bar.dart';
-import 'package:tickets_app/features/home/screens/home_view.dart';
-import '../../profile/screens/profile_view.dart';
+import 'package:tickets_app/features/hackathon/screens/hackathon_screen.dart';
+import 'package:tickets_app/features/event/screens/event_screen.dart';
+import '../../profile/screens/profile_screen.dart';
 
 class MainScreen extends StatelessWidget {
   MainScreen({super.key});
 
   final screens = [
     const Profile(),
-    const Home(),
+    const Event(),
+    const Hackathon(),
   ];
 
   @override
@@ -26,24 +29,28 @@ class MainScreen extends StatelessWidget {
         ),
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(
-            type: BottomNavigationBarType.shifting,
+            type: BottomNavigationBarType.fixed,
             selectedItemColor: Colors.black,
-            unselectedItemColor: Colors.white38,
+            unselectedItemColor: Colors.grey,
             showSelectedLabels: true,
-            showUnselectedLabels: false,
+            showUnselectedLabels: true,
             onTap: (index) {
               bottomNavigationController.changePage(index);
             },
             currentIndex: bottomNavigationController.selectedIndex.value,
-            items: const [
+            items: [
               BottomNavigationBarItem(
-                  icon: Icon(Icons.person),
-                  label: "profile",
-                  backgroundColor: Colors.grey),
+                  icon: const Icon(Icons.person),
+                  label: Strings.profile.tr,
+                  backgroundColor: Colors.white),
               BottomNavigationBarItem(
-                  icon: Icon(Icons.home),
-                  label: "home",
-                  backgroundColor: Colors.grey),
+                  icon: const Icon(Icons.view_comfy_rounded),
+                  label: Strings.events.tr,
+                  backgroundColor: Colors.white),
+              BottomNavigationBarItem(
+                  icon: const Icon(Icons.auto_graph_outlined),
+                  label: Strings.hackathon.tr,
+                  backgroundColor: Colors.white),
             ],
           ),
         ));
