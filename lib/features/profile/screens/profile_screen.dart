@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:tickets_app/config/translations/enum.dart';
 import 'package:tickets_app/features/profile/widgets/setting_widget.dart';
 import '../widgets/profile_hero_widget.dart';
 
@@ -14,11 +16,13 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
-      body: Container(
+      appBar: AppBar(
+        title: Text(Strings.profile.tr),
+        elevation: 0.3,
+      ),
+      body: SizedBox(
         width: double.infinity,
         height: size.height,
-        decoration:
-            const BoxDecoration(color: Color.fromARGB(255, 232, 231, 231)),
         child: const Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

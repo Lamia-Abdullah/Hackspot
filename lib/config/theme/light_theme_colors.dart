@@ -7,6 +7,10 @@ class LightThemeColors {
   static const Color secondaryColor = Color.fromARGB(255, 140, 140, 140);
   //Icons
   static const Color iconColor = Colors.white;
-
-  static const Color cardColor = Colors.blue;
+  //card
+  static const Color cardColor = Colors.white;
+  //Appbar
+  static const Color appbarColor = Color(0xff5265FF);
+  // Bottom Navigation Bar
+  static const Color bottomNavigationBarColor = Colors.white;
 }

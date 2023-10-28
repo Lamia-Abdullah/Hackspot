@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tickets_app/features/event/screens/main_screen.dart';
-import 'package:tickets_app/features/signin/screens%20/signup_screen.dart';
 import 'package:tickets_app/shared/widget/button_widget.dart';
 import 'package:tickets_app/shared/widget/logo_widget.dart';
 import 'package:tickets_app/shared/widget/text_field_widget.dart';
@@ -45,7 +43,7 @@ class _SignInScreenState extends State<SignInScreen> {
                       email: emailController.text,
                       password: passwordController.text)
                   .then((value) {
-                Get.to(() => MainScreen());
+                Get.offNamed("/MainScreen");
               }).onError((error, stackTrace) {
                 print("Error ${error.toString()}");
               });
@@ -57,12 +55,12 @@ class _SignInScreenState extends State<SignInScreen> {
                     style: TextStyle(color: Colors.black)),
                 GestureDetector(
                   onTap: () {
-                    Get.to(() => const SignUpScreen());
+                    Get.toNamed("/SignUpScreen");
                   },
                   child: const Text(
                     " Sign Up",
                     style: TextStyle(
-                        color: Colors.orange, fontWeight: FontWeight.bold),
+                        color: Colors.blue, fontWeight: FontWeight.bold),
                   ),
                 )
               ],

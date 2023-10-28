@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:tickets_app/features/event/screens/main_screen.dart';
 import 'package:tickets_app/shared/widget/button_widget.dart';
 import 'package:tickets_app/shared/widget/logo_widget.dart';
 import 'package:tickets_app/shared/widget/text_field_widget.dart';
@@ -22,8 +21,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
     return Scaffold(
       extendBodyBehindAppBar: true,
       appBar: AppBar(
-        backgroundColor: const Color(0xFFFF8C00),
-        elevation: 0,
+        elevation: 0.3,
         title: const Text(
           "Sign Up",
           style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
@@ -61,7 +59,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       email: emailController.text,
                       password: passwordController.text)
                   .then((value) {
-                Get.to(() => MainScreen());
+                Get.offAllNamed("/MainScreen");
               }).onError((error, stackTrace) {
                 print("Error ${error.toString()}");
               });

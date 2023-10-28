@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:get/get.dart';
 import 'package:tickets_app/config/theme/theme.dart';
+import 'package:tickets_app/config/translations/enum.dart';
 import 'package:tickets_app/config/translations/localization_service.dart';
 import 'package:tickets_app/features/signin/screens%20/signin_screen.dart';
 
@@ -9,8 +11,6 @@ class Setting extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final ThemeController themeController = ThemeController();
-
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Column(
@@ -18,7 +18,7 @@ class Setting extends StatelessWidget {
         children: [
           //Theme
           Card(
-            color: const Color.fromARGB(255, 181, 163, 246),
+            elevation: 0.1,
             child: ListTile(
               leading: Container(
                 height: 39,
@@ -34,15 +34,16 @@ class Setting extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              title: const Text('Change Theme'),
+              title: Text(Strings.theme.tr),
               onTap: () {
-               
+                final themeController = Get.find<ThemeController>();
+                themeController.toggleTheme();
               },
             ),
           ),
           //Language
           Card(
-            color: const Color.fromARGB(255, 197, 216, 250),
+            elevation: 0.1,
             child: ListTile(
               leading: Container(
                 height: 39,
@@ -56,7 +57,7 @@ class Setting extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              title: const Text('Change Language'),
+              title: Text(Strings.language.tr),
               onTap: () {
                 String newLanguageCode =
                     LocalizationService.getCurrentLocale().languageCode == 'ar'
@@ -66,10 +67,29 @@ class Setting extends StatelessWidget {
               },
             ),
           ),
+          Card(
+            elevation: 0.1,
+            child: ListTile(
+              leading: Container(
+                height: 39,
+                width: 39,
+                decoration: BoxDecoration(
+                  color: const Color.fromARGB(255, 68, 161, 126),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                child: const Icon(
+                  Icons.wallet,
+                  color: Colors.white,
+                ),
+              ),
+              title: Text(Strings.booking.tr),
+              onTap: () {},
+            ),
+          ),
           const SizedBox(height: 30),
           //logout
           Card(
-            color: const Color.fromARGB(255, 219, 191, 237),
+            elevation: 0.1,
             child: ListTile(
               leading: Container(
                 height: 39,
@@ -83,7 +103,7 @@ class Setting extends StatelessWidget {
                   color: Colors.white,
                 ),
               ),
-              title: const Text('Logout'),
+              title: Text(Strings.lougout.tr),
               onTap: () {
                 FirebaseAuth.instance.signOut().then((value) {
                   print("Signed Out");

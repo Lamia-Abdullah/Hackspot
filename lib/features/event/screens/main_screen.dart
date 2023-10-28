@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
 import 'package:tickets_app/controller/navigation_bar.dart';
 import 'package:tickets_app/features/hackathon/screens/hackathon_screen.dart';
-import 'package:tickets_app/features/event/screens/event_screen.dart';
+import 'package:tickets_app/features/event/screens/home_screen.dart';
 import '../../profile/screens/profile_screen.dart';
 
 class MainScreen extends StatelessWidget {
@@ -11,7 +11,7 @@ class MainScreen extends StatelessWidget {
 
   final screens = [
     const Profile(),
-    const Event(),
+    const Home(),
     const Hackathon(),
   ];
 
@@ -45,7 +45,7 @@ class MainScreen extends StatelessWidget {
                   backgroundColor: Colors.white),
               BottomNavigationBarItem(
                   icon: const Icon(Icons.view_comfy_rounded),
-                  label: Strings.events.tr,
+                  label: Strings.home.tr,
                   backgroundColor: Colors.white),
               BottomNavigationBarItem(
                   icon: const Icon(Icons.auto_graph_outlined),
