@@ -20,7 +20,4 @@ class DarkThemeColors {
   //Appbar
   static const Color appbarColor = Color(0xFF424242);
 
-
-  // header containers
-  // static const Color headerContainerBackgroundColor = Color(0XFFf8a319);
 }

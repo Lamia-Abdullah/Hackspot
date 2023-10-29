@@ -16,14 +16,16 @@ class ThemeController extends GetxController {
           ).copyWith(
             secondary: LightThemeColors.primaryColor,
           ),
+           //card
           cardColor: LightThemeColors.cardColor,
+          // Bottom Navigation Bar
           bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             backgroundColor: LightThemeColors.bottomNavigationBarColor,
           ),
           //Appbar
           appBarTheme: const AppBarTheme(
             color: LightThemeColors
-                .appbarColor, // Set the app bar color for the dark theme
+                .appbarColor, 
           ),
         )
       : ThemeData(
@@ -35,13 +37,15 @@ class ThemeController extends GetxController {
           ).copyWith(
             secondary: DarkThemeColors.secondaryColor,
           ),
+          //card
           cardColor: DarkThemeColors.cardColor,
+          // Bottom Navigation Bar
           bottomNavigationBarTheme: const BottomNavigationBarThemeData(
             backgroundColor: DarkThemeColors.bottomNavigationBarColor,
           ),
           appBarTheme: const AppBarTheme(
             color: DarkThemeColors
-                .appbarColor, // Set the app bar color for the dark theme
+                .appbarColor, 
           ),
         );
 
