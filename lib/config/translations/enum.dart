@@ -16,4 +16,5 @@ class Strings {
   static const String language = "Change Language";
   static const String lougout = "Lougout";
   static const String booking = "Booking";
+  static const String search = "search";
 }

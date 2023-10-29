@@ -18,4 +18,5 @@ const Map<String, String> us = {
   Strings.language: "Change Language",
   Strings.lougout: "Lougout",
   Strings.booking: "Booking",
+  Strings.search:"search",
 };

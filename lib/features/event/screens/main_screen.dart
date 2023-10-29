@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
 import 'package:tickets_app/controller/navigation_bar.dart';
-import 'package:tickets_app/features/hackathon/screens/hackathon_screen.dart';
+import 'package:tickets_app/features/Search/screens/search_screen.dart';
 import 'package:tickets_app/features/event/screens/home_screen.dart';
 import '../../profile/screens/profile_screen.dart';
 
@@ -12,7 +12,7 @@ class MainScreen extends StatelessWidget {
   final screens = [
     const Profile(),
     const Home(),
-    const Hackathon(),
+    const Search(),
   ];
 
   @override
@@ -44,12 +44,12 @@ class MainScreen extends StatelessWidget {
                   label: Strings.profile.tr,
                   backgroundColor: Colors.white),
               BottomNavigationBarItem(
-                  icon: const Icon(Icons.view_comfy_rounded),
+                  icon: const Icon(Icons.auto_graph_outlined),
                   label: Strings.home.tr,
                   backgroundColor: Colors.white),
               BottomNavigationBarItem(
-                  icon: const Icon(Icons.auto_graph_outlined),
-                  label: Strings.hackathon.tr,
+                  icon: const Icon(Icons.search),
+                  label: Strings.search.tr,
                   backgroundColor: Colors.white),
             ],
           ),

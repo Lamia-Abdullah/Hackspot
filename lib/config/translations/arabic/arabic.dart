@@ -18,4 +18,5 @@ const Map<String, String> ar = {
   Strings.language: "تغير اللغة",
   Strings.lougout: "تسجيل خروج",
   Strings.booking: "حجوزاتي",
+  Strings.search: "البحث"
 };
