@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
-import 'package:tickets_app/features/event/widgets/all_card_widget.dart';
-import 'package:tickets_app/features/event/widgets/conference_card_widget.dart';
+import 'package:tickets_app/features/home/widgets/all_card_widget.dart';
+import 'package:tickets_app/features/home/widgets/conference_card_widget.dart';
 
 class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);

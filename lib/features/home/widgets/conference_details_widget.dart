@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
-import 'package:tickets_app/features/event/widgets/ticket_widget.dart';
+import 'package:tickets_app/features/home/widgets/ticket_widget.dart';
 import 'package:tickets_app/shared/widget/button_widget.dart';
 
 class ConferenceDetails extends StatelessWidget {

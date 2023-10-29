@@ -3,7 +3,7 @@ import 'package:get/get.dart';
 import 'package:tickets_app/config/translations/enum.dart';
 import 'package:tickets_app/controller/navigation_bar.dart';
 import 'package:tickets_app/features/Search/screens/search_screen.dart';
-import 'package:tickets_app/features/event/screens/home_screen.dart';
+import 'package:tickets_app/features/home/screens/home_screen.dart';
 import '../../profile/screens/profile_screen.dart';
 
 class MainScreen extends StatelessWidget {
