@@ -34,7 +34,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
             const SizedBox(
               height: 20,
             ),
-            logoWidget("assets/images/event.png"),
+            logoWidget("assets/images/logo_hackspot.png"),
             const SizedBox(
               height: 30,
             ),
