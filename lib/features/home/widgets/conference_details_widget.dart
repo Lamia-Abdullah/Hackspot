@@ -44,8 +44,8 @@ class ConferenceDetails extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 20),
                 child: Column(
                   children: [
-                    const Text(
-                      'Subtitle Subtitle Subtitle Subtitle Subtitle  Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle Subtitle',
+                    Text(
+                      Strings.conferenceDescription.tr,
                     ),
                     const SizedBox(
                       height: 20,
@@ -72,6 +72,7 @@ class ConferenceDetails extends StatelessWidget {
                         const Icon(
                           Icons.location_on,
                           size: 15,
+                          color: Color(0xff5265FF),
                         ),
                         const SizedBox(
                           width: 5,
@@ -87,6 +88,7 @@ class ConferenceDetails extends StatelessWidget {
                         Icon(
                           Icons.date_range_outlined,
                           size: 15,
+                          color: Color(0xff5265FF),
                         ),
                         SizedBox(
                           width: 5,
