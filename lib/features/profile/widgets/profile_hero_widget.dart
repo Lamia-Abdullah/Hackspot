@@ -24,7 +24,7 @@ class ProfileHero extends StatelessWidget {
               ),
             ),
             child: Image.asset(
-              'assets/images/person.png',
+              'assets/images/profile.jpeg',
             ),
           ),
           const SizedBox(width: 9),
@@ -34,10 +34,6 @@ class ProfileHero extends StatelessWidget {
             children: [
               Text(
                 Strings.yourName.tr,
-                style: const TextStyle(
-                  color: Colors.black,
-                  fontSize: 16,
-                ),
               ),
             ],
           ),

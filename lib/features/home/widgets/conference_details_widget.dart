@@ -53,7 +53,6 @@ class ConferenceDetails extends StatelessWidget {
                     Container(
                       margin: const EdgeInsets.only(left: 20, right: 20),
                       child: const Divider(
-                        color: Colors.black,
                         thickness: 0.2,
                       ),
                     ),

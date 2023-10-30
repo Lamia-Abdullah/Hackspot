@@ -30,7 +30,7 @@ class MainScreen extends StatelessWidget {
         bottomNavigationBar: Obx(
           () => BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
-            selectedItemColor: Colors.black,
+            selectedItemColor: Colors.grey,
             unselectedItemColor: Colors.grey,
             showSelectedLabels: true,
             showUnselectedLabels: true,

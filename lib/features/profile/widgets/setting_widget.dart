@@ -35,10 +35,10 @@ class Setting extends StatelessWidget {
                 ),
               ),
               title: Text(Strings.theme.tr),
-              onTap: () {
-                final themeController = Get.find<ThemeController>();
-                themeController.toggleTheme();
-              },
+              // onTap: () {
+              //   final themeController = Get.find<ThemeController>();
+              //   themeController.toggleTheme();
+              // },
             ),
           ),
           //Language

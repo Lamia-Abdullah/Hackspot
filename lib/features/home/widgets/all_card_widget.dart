@@ -14,12 +14,12 @@ class AllCard extends StatelessWidget {
         const SizedBox(
           height: 20,
         ),
-        const Row(
+        Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
-            Text("الفعاليات"),
+            Text(Strings.all.tr),
           ],
         ),
         SizedBox(
@@ -50,13 +50,13 @@ class AllCard extends StatelessWidget {
                     Positioned(
                       top: 10,
                       right: isEnglish ? 10 : null, // Move to right for English
-                      left: isEnglish ? null : 10, 
+                      left: isEnglish ? null : 10,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Container(
                           width: 80,
                           height: 40,
-                          color: const Color(0xffEAECFF),
+                          color: const Color.fromARGB(97, 153, 160, 222),
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
@@ -95,14 +95,14 @@ class AllCard extends StatelessWidget {
                     ),
                     Positioned(
                       top: 10,
-                      right: isEnglish ? 10 : null, 
-                      left: isEnglish ? null : 10, 
+                      right: isEnglish ? 10 : null,
+                      left: isEnglish ? null : 10,
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(10),
                         child: Container(
                           width: 80,
                           height: 40,
-                          color: const Color(0xffEAECFF),
+                          color: const Color.fromARGB(97, 153, 160, 222),
                           child: Align(
                             alignment: Alignment.center,
                             child: Text(

@@ -20,4 +20,6 @@ const Map<String, String> us = {
   Strings.booking: "Booking",
   Strings.search:"search",
   Strings.conferenceDescription:"Black Hat, the largest cybersecurity event in the region, is preparing to launch, bringing together the best minds in the field of cybersecurity in mid-November in the Saudi capital, Riyadh.",
+  Strings.comingSoon:" Coming Soon",
+  Strings.all:"all",
 };

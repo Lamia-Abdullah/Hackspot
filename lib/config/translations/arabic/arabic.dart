@@ -20,4 +20,6 @@ const Map<String, String> ar = {
   Strings.booking: "حجوزاتي",
   Strings.search: "البحث",
   Strings.conferenceDescription:"تستعد فعالية بلاك هات أكبر فعالية أمن سيبراني في المنطقة للانطلاق، والتي تجمع أفضل العقول في مجال الأمن السيبراني في منتصف نوفمبر في العاصمة السعودية الرياض",
+  Strings.comingSoon:"المؤتمرات القريبة",
+  Strings.all:"الكل"
 };

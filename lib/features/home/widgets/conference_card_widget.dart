@@ -37,12 +37,12 @@ class _ConferenceCardState extends State<ConferenceCard> {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        const Row(
+        Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 15,
             ),
-            Text("الفعاليات القريبة"),
+            Text(Strings.comingSoon.tr),
           ],
         ),
         SizedBox(

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/scheduler.dart';
 import 'package:get/get.dart';
 import 'package:tickets_app/config/theme/dark_theme_colors.dart';
 import 'package:tickets_app/config/theme/light_theme_colors.dart';
 
 class ThemeController extends GetxController {
   RxBool isLightMode = true.obs;
+  Rx<ThemeMode> themeMode = ThemeMode.system.obs;
 
   ThemeData get themeData => isLightMode.value
       ? ThemeData(
@@ -16,7 +18,7 @@ class ThemeController extends GetxController {
           ).copyWith(
             secondary: LightThemeColors.primaryColor,
           ),
-           //card
+          //card
           cardColor: LightThemeColors.cardColor,
           // Bottom Navigation Bar
           bottomNavigationBarTheme: const BottomNavigationBarThemeData(
@@ -24,9 +26,12 @@ class ThemeController extends GetxController {
           ),
           //Appbar
           appBarTheme: const AppBarTheme(
-            color: LightThemeColors
-                .appbarColor, 
+            color: LightThemeColors.appbarColor,
           ),
+          // app background color
+          scaffoldBackgroundColor: LightThemeColors.scaffoldBackgroundColor,
+          // divider color
+          dividerColor: LightThemeColors.dividerColor,
         )
       : ThemeData(
           primaryColor: DarkThemeColors.primaryColor,
@@ -37,6 +42,8 @@ class ThemeController extends GetxController {
           ).copyWith(
             secondary: DarkThemeColors.secondaryColor,
           ),
+          // app background color
+          scaffoldBackgroundColor: DarkThemeColors.scaffoldBackgroundColor,
           //card
           cardColor: DarkThemeColors.cardColor,
           // Bottom Navigation Bar
@@ -44,12 +51,21 @@ class ThemeController extends GetxController {
             backgroundColor: DarkThemeColors.bottomNavigationBarColor,
           ),
           appBarTheme: const AppBarTheme(
-            color: DarkThemeColors
-                .appbarColor, 
+            color: DarkThemeColors.appbarColor,
           ),
+          // divider color
+          dividerColor: DarkThemeColors.dividerColor,
         );
 
   void toggleTheme() {
     isLightMode.value = !isLightMode.value;
+    themeMode.value = isLightMode.value ? ThemeMode.light : ThemeMode.dark;
+  }
+
+  void updateThemeMode() {
+    final Brightness systemBrightness =
+        SchedulerBinding.instance.window.platformBrightness ?? Brightness.light;
+    isLightMode.value = systemBrightness == Brightness.light;
+    themeMode.value = isLightMode.value ? ThemeMode.light : ThemeMode.dark;
   }
 }

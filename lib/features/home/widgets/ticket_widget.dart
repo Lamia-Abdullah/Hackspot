@@ -43,7 +43,7 @@ class Tickets extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 120, left: 30, right: 30),
+                padding: const EdgeInsets.only(top: 40, left: 30, right: 30),
                 child: Container(
                   width: 250,
                   height: 150,
@@ -58,7 +58,18 @@ class Tickets extends StatelessWidget {
                   '9824 0972 1742 1298',
                   style: TextStyle(color: Colors.black),
                 ),
-              )
+              ),
+              Padding(
+                padding: const EdgeInsets.only(left: 30, right: 30),
+                child: Container(
+                  width: 200,
+                  height: 100,
+                  decoration: const BoxDecoration(
+                      image: DecorationImage(
+                    image: AssetImage('assets/images/wallet.png'),
+                  )),
+                ),
+              ),
             ],
           ),
         ),

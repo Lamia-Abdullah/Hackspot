@@ -1,4 +1,8 @@
+
 # Hackspot 🚀
+
+<img width="1327" alt="Screenshot 1445-04-15 at 12 26 19 PM" src="https://github.com/Lamia-Abdullah/Hackspot/assets/89685293/8734800b-0d2c-49dc-a7fe-19f2521c51ca">
+
 
 # How to use this project 🛠️
 
