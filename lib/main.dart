@@ -14,15 +14,14 @@ Future<void> main() async {
     (options) {
       options.dsn =
           'https://a17e97379332ff7a3f4c228ece6df080@o4506568180432896.ingest.sentry.io/4506568498937856';
-      // Set tracesSampleRate to 1.0 to capture 100% of transactions for performance monitoring.
-      // We recommend adjusting this value in production.
+  
       options.tracesSampleRate = 0.1;
       options.attachScreenshot = true;
     },
     appRunner: () => runApp(const SentryScreenshotWidget(child: MyApp())),
   );
 
-  // or define SENTRY_DSN via Dart environment variable (--dart-define)
+
 }
 
 class MyApp extends StatelessWidget {

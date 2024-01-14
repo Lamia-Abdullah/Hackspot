@@ -6,7 +6,7 @@
 
 # How to use this project 🛠️
 
-Run the following commands from your terminal👇🏻
+Run the following commands from your terminal 👇🏻
 
 1) Clone repository 🖇️ 
 ```
